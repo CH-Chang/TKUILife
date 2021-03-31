@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/news_viewpager_monitor_monitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:padding="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:layout_marginTop="5dp"
+        android:text="點擊下方任一監視點以檢示"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="10dp"
+        android:textAlignment="center">
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_viewpager_monitor_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:fadingEdge="none">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

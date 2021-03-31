@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    android:gravity="center_vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/cell_home_body_curriculum_viewpager_recyclerview_session"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textAlignment="center">
+        </TextView>
+        <com.fly.tkuilife.view.MarqueeTextView
+            android:id="@+id/cell_home_body_curriculum_viewpager_recyclerview_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:text="讀取中"
+            android:textSize="15dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textAlignment="center">
+        </com.fly.tkuilife.view.MarqueeTextView>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/cell_home_body_curriculum_viewpager_recyclerview_seatnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="-"
+        android:textSize="15dp"
+        android:textColor="@color/colorTextPrimary"
+        android:textAlignment="center">
+    </TextView>
+    <TextView
+        android:id="@+id/cell_home_body_curriculum_viewpager_recyclerview_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:text="-"
+        android:textSize="15dp"
+        android:textColor="@color/colorTextPrimary"
+        android:textAlignment="center">
+    </TextView>
+    <TextView
+        android:id="@+id/cell_home_body_curriculum_viewpager_recyclerview_room"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="-"
+        android:textSize="15dp"
+        android:textColor="@color/colorTextPrimary"
+        android:textAlignment="center">
+    </TextView>
+
+
+</LinearLayout>

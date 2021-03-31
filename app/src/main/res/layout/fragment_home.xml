@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/home_swiperefreshlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true"
+        android:fadingEdge="none"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@color/colorBackgroundHeader">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/home_header_greetings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text=""
+                    android:textColor="@color/colorTextHomeInfo"
+                    android:textSize="18dp"
+                    android:textAlignment="center">
+                </TextView>
+                <TextView
+                    android:id="@+id/home_header_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text=""
+                    android:textColor="@color/colorTextHomeInfo"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center">
+                </TextView>
+                <TextView
+                    android:id="@+id/home_header_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text=""
+                    android:textColor="@color/colorTextHomeInfo"
+                    android:textSize="18dp"
+                    android:textAlignment="center">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorDividerHomeInfo">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/home_header_university"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="@color/colorTextHomeInfo"
+                    android:textAlignment="center">
+                </TextView>
+                <TextView
+                    android:id="@+id/home_header_department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="@color/colorTextHomeInfo"
+                    android:textAlignment="center">
+                </TextView>
+                <TextView
+                    android:id="@+id/home_header_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="@color/colorTextHomeInfo"
+                    android:textAlignment="center">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <com.fly.tkuilife.view.RoundImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="5dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/ic_news"
+                    android:background="@drawable/shape_home_header_icon"
+                    app:mode="circle">
+                </com.fly.tkuilife.view.RoundImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="7"
+                    android:padding="5dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="ID - "
+                            android:textSize="18dp"
+                            android:textColor="@color/colorTextHomeClasses"
+                            android:textAlignment="center">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/home_header_stuid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text=""
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/colorTextHomeClasses"
+                            android:textAlignment="center">
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="0.5dp"
+                        android:textColor="@color/colorDividerHomeClasses"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/home_header_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="1dp"
+                                android:text="當前課程："
+                                android:textSize="18dp"
+                                android:textColor="@color/colorTextHomeClasses"
+                                android:textAlignment="center">
+                            </TextView>
+                            <com.fly.tkuilife.view.MarqueeTextView
+                                android:id="@+id/home_header_currentclass"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="1dp"
+                                android:marqueeRepeatLimit="-1"
+                                android:singleLine="true"
+                                android:focusableInTouchMode="true"
+                                android:focusable="true"
+                                android:ellipsize="marquee"
+                                android:text="-"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorTextHomeClasses"
+                                android:textAlignment="center">
+                            </com.fly.tkuilife.view.MarqueeTextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="1dp"
+                                android:text="下節課程："
+                                android:textSize="18dp"
+                                android:textColor="@color/colorTextHomeClasses"
+                                android:textAlignment="center">
+                            </TextView>
+                            <com.fly.tkuilife.view.MarqueeTextView
+                                android:id="@+id/home_header_nextclass"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="1dp"
+                                android:marqueeRepeatLimit="-1"
+                                android:singleLine="true"
+                                android:focusableInTouchMode="true"
+                                android:focusable="true"
+                                android:ellipsize="marquee"
+                                android:text="-"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorTextHomeClasses"
+                                android:textAlignment="center">
+                            </com.fly.tkuilife.view.MarqueeTextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/home_header_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <Button
+                            android:id="@+id/home_header_btnlogin"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:theme="@style/Widget.AppCompat.Button.Borderless"
+                            android:background="@drawable/ripple_home_header_btnlogin"
+                            android:text="登入"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15dp"
+                            android:textAlignment="center">
+                        </Button>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_body"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/shape_home_body"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/home_body_curriculum"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/home_body_curriculum_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="課程總覽"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorTextHomeContentTitle"
+                        android:textAlignment="center">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorDividerHomeContentTitle">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_home_body_cell"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <com.fly.tkuilife.view.ViewPager
+                            android:id="@+id/home_body_curriculum_viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:padding="5dp"
+                            android:overScrollMode="never"
+                            android:fadingEdge="none">
+                        </com.fly.tkuilife.view.ViewPager>
+
+                        <LinearLayout
+                            android:id="@+id/home_body_curriculum_indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/home_body_transportation"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/home_body_transportation_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公車資訊"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorTextHomeContentTitle"
+                        android:textAlignment="center">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorDividerHomeContentTitle">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_home_body_cell"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <com.fly.tkuilife.view.ViewPager
+                            android:id="@+id/home_body_transportation_viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:padding="5dp"
+                            android:overScrollMode="never"
+                            android:fadingEdge="none">
+                        </com.fly.tkuilife.view.ViewPager>
+
+                        <LinearLayout
+                            android:id="@+id/home_body_transportation_indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/home_body_weather"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/home_body_weather_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="天氣資訊"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorTextHomeContentTitle"
+                        android:textAlignment="center">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorDividerHomeContentTitle">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_home_body_cell"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <com.fly.tkuilife.view.ViewPager
+                            android:id="@+id/home_body_weather_viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:padding="5dp"
+                            android:overScrollMode="never"
+                            android:fadingEdge="none">
+                        </com.fly.tkuilife.view.ViewPager>
+
+                        <LinearLayout
+                            android:id="@+id/home_body_weather_indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/shape_curriculum_viewpager_timetable_cell"
+    android:padding="20px">
+
+    <com.fly.tkuilife.view.MarqueeTextView
+        android:id="@+id/cell_curriculum_viewpager_timetable_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="課程名稱"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite">
+    </com.fly.tkuilife.view.MarqueeTextView>
+
+    <com.fly.tkuilife.view.MarqueeTextView
+        android:id="@+id/cell_curriculum_viewpager_timetable_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="課程教室"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite">
+    </com.fly.tkuilife.view.MarqueeTextView>
+    <com.fly.tkuilife.view.MarqueeTextView
+        android:id="@+id/cell_curriculum_viewpager_timetable_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="授課教師"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite">
+    </com.fly.tkuilife.view.MarqueeTextView>
+
+</LinearLayout>

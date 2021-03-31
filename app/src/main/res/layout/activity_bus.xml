@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bus_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorToolbarBackgroundPrimary"
+        android:elevation="5dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/bus_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="公車資訊"
+            android:textColor="@color/colorToolbarTextPrimary"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/bus_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        app:tabTextColor="@color/colorTabLayoutTextNormal"
+        app:tabSelectedTextColor="@color/colorTabLayoutTextHighlight"
+        app:tabIndicatorColor="@color/colorTabLayoutIndicator"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabBackground="@color/colorBackground">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/bus_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </androidx.viewpager.widget.ViewPager>
+
+    <TextView
+        android:id="@+id/bus_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10 秒前更新"
+        android:textSize="15dp"
+        android:textColor="@color/colorWhite"
+        android:textAlignment="textEnd"
+        android:background="@color/colorBackgroundBusUpdateTime">
+    </TextView>
+</LinearLayout>

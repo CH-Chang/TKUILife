@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#001e3f</color>
+    <color name="colorPrimaryDark">#050015</color>
+    <color name="colorAccent">#1f1f1f</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorBackgroundSecondary">#aaaaaa</color>
+    <color name="colorBackgroundHeader">#050015</color>
+    <color name="colorBackgroundTimetableCell">#001e3f</color>
+    <color name="colorBackgroundBusUpdateTime">#050015</color>
+    <color name="colorBackgroundBusSituation">#eeeeee</color>
+    <color name="colorBackgroundBus">#001e3f</color>
+    <color name="colorBackgroundIndicatorSelected">#916A1E</color>
+    <color name="colorBackgroundIndicatorUnselected">#6A6A6A</color>
+    <color name="colorBackgroundAuthorizationSelected">#000000</color>
+    <color name="colorBackgroundAuthorizationUnSelected">#707070</color>
+
+
+    <color name="colorStrokTimetableCell">#bbbbbb</color>
+    <color name="colorStrokHomeBody">#7d7d7d</color>
+
+    <color name="colorTextPrimary">#000000</color>
+    <color name="colorTextSecondary">#7d7d7d</color>
+    <color name="colorTextHomeInfo">#A79C95</color>
+    <color name="colorTextHomeClasses">#9C9C9C</color>
+    <color name="colorTextHomeContentTitle">#5D5E61</color>
+    <color name="colorTextOtherName">#ffffff</color>
+    <color name="colorTextGradeTitle">#050015</color>
+
+    <!--ICON著色顏色集-->
+    <color name="colorIconTint">#000000</color>
+
+    <!--Ripple顏色集-->
+    <color name="colorRippleHighlightPrimary">#1f000000</color>
+
+    <!--Tablayout 顏色集-->
+    <color name="colorTabLayoutTextNormal">#000000</color>
+    <color name="colorTabLayoutTextHighlight">#C5832C</color>
+    <color name="colorTabLayoutIndicator">#E22525</color>
+
+    <!--Main 下方導航列-->
+    <color name="colorMainNavTextNormal">#707070</color>
+    <color name="colorMainNavTextHighight">#E22525</color>
+    <color name="colorMainNavIconNormal">#707070</color>
+    <color name="colorMainNavIconHighlight">#C5832C</color>
+
+    <!--Toolbar顏色集-->
+    <color name="colorToolbarBackgroundPrimary">#050015</color>
+    <color name="colorToolbarTextPrimary">#ffffff</color>
+
+
+    <color name="colorDividerPrimary">#7d7d7d</color>
+    <color name="colorDividerHomeInfo">#A79C95</color>
+    <color name="colorDividerHomeClasses">#9C9C9C</color>
+    <color name="colorDividerHomeContentTitle">#5D5E61</color>
+
+
+</resources>

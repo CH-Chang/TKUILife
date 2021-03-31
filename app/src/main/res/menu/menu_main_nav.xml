@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/main_nav_grade"
+        android:title="成績"
+        android:icon="@drawable/ic_grade"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/main_nav_curriculum"
+        android:title="課表"
+        android:icon="@drawable/ic_curriculum"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/main_nav_home"
+        android:title="首頁"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/main_nav_news"
+        android:title="動態"
+        android:icon="@drawable/ic_news"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/main_nav_other"
+        android:title="其他"
+        android:icon="@drawable/ic_other"
+        app:showAsAction="always">
+    </item>
+
+
+
+</menu>

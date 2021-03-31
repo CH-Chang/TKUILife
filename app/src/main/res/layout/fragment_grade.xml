@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/grade_swiperefreshlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:background="@drawable/bg_grade">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="45dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="G"
+                    android:textSize="150dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorTextGradeTitle"
+                    android:textStyle="bold">
+                </TextView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="100dp"
+                        android:text="成績試算"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextGradeTitle"
+                        android:textStyle="bold">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grade Calculation"
+                        android:textSize="020dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextGradeTitle"
+                        android:textStyle="bold">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/grade_error"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/grade_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorTextPrimary">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/grade_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:visibility="gone">
+                <View
+                    android:layout_width="250dp"
+                    android:layout_height="0.5dp"
+                    android:background="#707070"
+                    android:gravity="center_horizontal">
+                </View>
+                <TextView
+                    android:id="@+id/grade_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text="成績資料"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textAlignment="center">
+                </TextView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/grade_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+                </androidx.recyclerview.widget.RecyclerView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp"
+                        android:text="總學分數："
+                        android:textColor="@color/colorTextPrimary"
+                        android:textSize="20dp"
+                        android:textAlignment="center">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/grade_totalcredit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp"
+                        android:text="--學分"
+                        android:textColor="@color/colorTextPrimary"
+                        android:textSize="20dp"
+                        android:textAlignment="center">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp"
+                        android:text="實得學分："
+                        android:textColor="@color/colorTextPrimary"
+                        android:textSize="20dp"
+                        android:textAlignment="center">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/grade_gotcredit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp"
+                        android:text="--學分"
+                        android:textColor="@color/colorTextPrimary"
+                        android:textSize="20dp"
+                        android:textAlignment="center">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp"
+                        android:text="加權平均"
+                        android:textColor="@color/colorTextPrimary"
+                        android:textSize="30dp"
+                        android:textAlignment="center">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/grade_average"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="--"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorTextPrimary"
+                        android:textSize="40dp"
+                        android:textAlignment="center">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp"
+                        android:text="分"
+                        android:textColor="@color/colorTextPrimary"
+                        android:textSize="30dp"
+                        android:textAlignment="center">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

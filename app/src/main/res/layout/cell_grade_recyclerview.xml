@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="1dp">
+
+    <com.fly.tkuilife.view.MarqueeTextView
+        android:id="@+id/cell_grade_recyclerview_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:padding="1dp"
+        android:layout_marginLeft="5dp"
+        android:text="科目名稱"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="15dp">
+    </com.fly.tkuilife.view.MarqueeTextView>
+    <TextView
+        android:id="@+id/cell_grade_recyclerview_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:layout_marginLeft="5dp"
+        android:text="- 學分"
+        android:textSize="15dp"
+        android:textColor="@color/colorTextPrimary"
+        android:textAlignment="center">
+    </TextView>
+    <TextView
+        android:id="@+id/cell_grade_recyclerview_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="-- 分"
+        android:textSize="15dp"
+        android:textColor="@color/colorTextPrimary"
+        android:textAlignment="center">
+    </TextView>
+
+</LinearLayout>

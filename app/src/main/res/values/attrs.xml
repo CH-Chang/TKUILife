@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundImageView">
+        <attr name="mode" format="enum">
+            <enum name="circle" value="1"></enum>
+            <enum name="round" value="2"></enum>
+        </attr>
+        <attr name="radius" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="TextRoundProgress">
+        <attr name="roundColor" format="color"></attr>
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="progressColor" format="color"></attr>
+        <attr name="progressWidth" format="dimension"></attr>
+        <attr name="text" format="string"></attr>
+        <attr name="textColor" format="color"></attr>
+        <attr name="textSize" format="dimension"></attr>
+        <attr name="numSize" format="dimension"></attr>
+        <attr name="max" format="integer"></attr>
+        <attr name="progress" format="integer"></attr>
+        <attr name="textShow" format="boolean"></attr>
+        <attr name="startAngle" format="integer"></attr>
+    </declare-styleable>
+</resources>

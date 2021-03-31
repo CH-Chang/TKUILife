@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/cell_bus_viewpager_view_recyclerview_estimatetime"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text=""
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextPrimary"
+        android:background="@drawable/shape_bus_viewpager_recyclerview_estimatetime">
+    </TextView>
+    <TextView
+        android:id="@+id/cell_bus_viewpager_view_recyclerview_station"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text=""
+        android:textSize="15dp"
+        android:textColor="@color/colorTextPrimary">
+    </TextView>
+    <TextView
+        android:id="@+id/cell_bus_viewpager_view_recyclerview_bus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text=""
+        android:textSize="12dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shape_bus_viewpager_recyclerview_bus">
+    </TextView>
+    
+</LinearLayout>

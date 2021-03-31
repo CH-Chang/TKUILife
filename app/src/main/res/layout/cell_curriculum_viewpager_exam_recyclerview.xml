@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/cell_curriculum_viewpager_exam_recyclerview_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/ripple_default">
+        <TextView
+            android:id="@+id/cell_curriculum_viewpager_exam_recyclerview_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="-"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textAlignment="center">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <com.fly.tkuilife.view.MarqueeTextView
+                android:id="@+id/cell_curriculum_viewpager_exam_recyclerview_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text=""
+                android:textSize="15dp"
+                android:textColor="@color/colorTextPrimary">
+            </com.fly.tkuilife.view.MarqueeTextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.fly.tkuilife.view.MarqueeTextView
+                    android:id="@+id/cell_curriculum_viewpager_exam_recyclerview_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="1dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textColor="@color/colorTextSecondary">
+                </com.fly.tkuilife.view.MarqueeTextView>
+                <TextView
+                    android:id="@+id/cell_curriculum_viewpager_exam_recyclerview_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textColor="@color/colorTextSecondary">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cell_curriculum_viewpager_exam_recyclerview_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:alpha="1"
+        android:animateLayoutChanges="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="1dp"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="#707070"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:text="考試日期："
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="15dp"></TextView>
+
+            <com.fly.tkuilife.view.MarqueeTextView
+                android:id="@+id/cell_curriculum_viewpager_exam_recyclerview_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="15dp"></com.fly.tkuilife.view.MarqueeTextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:text="考試教室："
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/cell_curriculum_viewpager_exam_recyclerview_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:text=""
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="15dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:text="成績座號："
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="15dp"></TextView>
+
+            <com.fly.tkuilife.view.MarqueeTextView
+                android:id="@+id/cell_curriculum_viewpager_exam_recyclerview_seatnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="15dp"></com.fly.tkuilife.view.MarqueeTextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:text="考試座號："
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="15dp"></TextView>
+
+            <com.fly.tkuilife.view.MarqueeTextView
+                android:id="@+id/cell_curriculum_viewpager_exam_recyclerview_examnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="15dp"></com.fly.tkuilife.view.MarqueeTextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

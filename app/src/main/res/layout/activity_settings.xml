@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/settings_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorToolbarBackgroundPrimary"
+        android:elevation="5dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="一般設置"
+            android:textColor="@color/colorToolbarTextPrimary"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/settings_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/ripple_default"
+        android:clickable="true"
+        android:focusable="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:layout_marginLeft="10dp"
+            android:text="顯示語言"
+            android:textSize="15dp"
+            android:textColor="@color/colorTextPrimary">
+        </TextView>
+        <TextView
+            android:id="@+id/settings_languageshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_marginRight="10dp"
+            android:text="繁體中文"
+            android:textSize="15dp"
+            android:textColor="@color/colorTextSecondary">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/settings_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/ripple_default"
+        android:clickable="true"
+        android:focusable="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:layout_marginLeft="10dp"
+            android:text="顯示主題"
+            android:textSize="15dp"
+            android:textColor="@color/colorTextPrimary">
+        </TextView>
+        <TextView
+            android:id="@+id/settings_themeshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_marginRight="10dp"
+            android:text="系統預設主題"
+            android:textSize="15dp"
+            android:textColor="@color/colorTextSecondary">
+        </TextView>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
